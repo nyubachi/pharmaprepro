@@ -1,11 +1,12 @@
 Package: pharmaprepro
 Type: Package
-Title: What the Package Does (Title Case)
+Title: This package is for medical staff such as pharmacists to use for preprocessing clinical data.
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Authors@R: person("nyubachi", role = c("aut", "cre"), email = "nyubachi248@gmail.com")
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
