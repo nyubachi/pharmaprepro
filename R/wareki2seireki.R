@@ -10,7 +10,6 @@
 #'
 #' @export
 #'
-
 wareki2seireki <- function(wareki) {
   # 和暦の.を/に変換
   x <- str_replace_all(wareki, pattern="\\.", replacement="/")
@@ -42,6 +41,4 @@ wareki2seireki <- function(wareki) {
 
   # 年と月日を結合
   seireki <- str_c(seireki_year, month_day, sep = "")
-
-  return(seireki)
 }

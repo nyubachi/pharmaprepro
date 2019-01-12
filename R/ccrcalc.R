@@ -8,7 +8,6 @@
 #'
 #' @export
 #'
-
 ccrcalc <- function(age, weight, scr, gender, correction = 1) {
   # 性別の論理型ベクトルを作成
   female <- gender == "female"
