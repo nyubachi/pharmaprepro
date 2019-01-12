@@ -35,12 +35,12 @@ library(pharmaprepro)
 
 ```{r}
 # test data
-x <- data.frame(age = c(109, 98, 47, 25),
+x <- data.frame(age = c(109, 98, 72, 25),
                 height = c(161.5, 182.5, 170.1, 155.4),
                 weight = c(55.2, 70.2, 60.5, 54.8),
-                scr = c(0.8, 1.2, 0.4, 0.5),
+                scr = c(0.4, 0.9, 1.1, 0.5),
                 gender = c("female", "male", "male", "female"),
-                birthday = c("M43.09.12", "T10.11.05", "S47.03.31", "H06.12.29"))
+                birthday = c("M43.09.12", "T10.11.05", "S22.03.31", "H06.12.29"))
 ```
 
 ### bmicalc

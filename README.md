@@ -26,12 +26,12 @@ library(pharmaprepro)
 
 ``` r
 # test data
-x <- data.frame(age = c(109, 98, 47, 25),
+x <- data.frame(age = c(109, 98, 72, 25),
                 height = c(161.5, 182.5, 170.1, 155.4),
                 weight = c(55.2, 70.2, 60.5, 54.8),
-                scr = c(0.8, 1.2, 0.4, 0.5),
+                scr = c(0.4, 0.9, 1.1, 0.5),
                 gender = c("female", "male", "male", "female"),
-                birthday = c("M43.09.12", "T10.11.05", "S47.03.31", "H06.12.29"))
+                birthday = c("M43.09.12", "T10.11.05", "S22.03.31", "H06.12.29"))
 ```
 
 ### bmicalc
@@ -47,14 +47,14 @@ If scr is less than 0.6, it rounds up to 0.6.
 
 ``` r
 ccrcalc(x$age, x$weight, x$scr, x$gender, 1)
-#> [1]  25.25  34.13 130.24 124.00
+#> [1]  33.67  45.50  51.94 124.00
 ```
 
 No scr correction.
 
 ``` r
 ccrcalc(x$age, x$weight, x$scr, x$gender, 0)
-#> [1]  25.25  34.13 195.36 148.80
+#> [1]  50.50  45.50  51.94 148.80
 ```
 
 ### stdwtcalc
@@ -68,5 +68,5 @@ stdwtcalc(x$height)
 
 ``` r
 wareki2seireki(x$birthday)
-#> [1] "1910/09/12" "1921/11/05" "1972/03/31" "1994/12/29"
+#> [1] "1910/09/12" "1921/11/05" "1947/03/31" "1994/12/29"
 ```
