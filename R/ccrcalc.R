@@ -4,7 +4,7 @@
 #' @param weight Unit is kilogram
 #' @param scr Serum creatinine value. Unit is mg/dL.
 #' @param gender female or male
-#' @param correction When the value is 1, if scr is less than 0.6, scr is rounded up to 0.6. If the value is 0, it will not be rounded up. The default value is
+#' @param correction When the value is 1, if scr is less than 0.6, scr is rounded up to 0.6. If the value is 0, it will not be rounded up. The default value is 1.
 #'
 #' @export
 #'

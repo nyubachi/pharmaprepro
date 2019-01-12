@@ -12,16 +12,16 @@
 #'
 wareki2seireki <- function(wareki) {
   # 和暦の.を/に変換
-  x <- str_replace_all(wareki, pattern="\\.", replacement="/")
+  x <- stringr::str_replace_all(wareki, pattern="\\.", replacement="/")
 
   # 年号のアルファベットを取得
-  nengo <- as.character(str_sub(x, start=1, end=1))
+  nengo <- as.character(stringr::str_sub(x, start=1, end=1))
 
   # 和暦の年数を取得
-  wareki_year <- as.numeric(str_sub(x, start=2, end=3))
+  wareki_year <- as.numeric(stringr::str_sub(x, start=2, end=3))
 
   # 月日の数字を取得
-  month_day <- str_sub(x, start=4, end=9)
+  month_day <- stringr::str_sub(x, start=4, end=9)
 
   # 西暦用の空ベクトルを作る
   seireki_year <- rep(0, length(wareki))
@@ -40,5 +40,5 @@ wareki2seireki <- function(wareki) {
   seireki_year[heisei] <- as.character(wareki_year[heisei] + 1988)
 
   # 年と月日を結合
-  seireki <- str_c(seireki_year, month_day, sep = "")
+  seireki <- stringr::str_c(seireki_year, month_day, sep = "")
 }
