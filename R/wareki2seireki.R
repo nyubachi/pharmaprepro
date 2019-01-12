@@ -40,7 +40,5 @@ wareki2seireki <- function(wareki) {
   seireki_year[heisei] <- as.character(wareki_year[heisei] + 1988)
 
   # 年と月日を結合
-  seireki <- stringr::str_c(seireki_year, month_day, sep = "")
-
-  print(seireki)
+  stringr::str_c(seireki_year, month_day, sep = "")
 }
