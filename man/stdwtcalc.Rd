@@ -4,12 +4,10 @@
 \alias{stdwtcalc}
 \title{Calculate standard weight}
 \usage{
-stdwtcalc(height, weight)
+stdwtcalc(height)
 }
 \arguments{
 \item{height}{Unit is centimeter}
-
-\item{weight}{Unit is kilogram}
 }
 \description{
 Calculate standard weight
