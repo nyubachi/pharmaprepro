@@ -3,15 +3,18 @@
 
 # pharmaprepro
 
-The goal of pharmaprepro is to …
+This package is for medical staff such as pharmacists to use for
+preprocessing clinical data.
 
 ## Installation
 
 You can install the released version of pharmaprepro from
-[CRAN](https://CRAN.R-project.org) with:
+[GitHub](https://github.com/nyubachi/pharmaprepro) with:
 
 ``` r
-install.packages("pharmaprepro")
+install.packages("devtools")
+require(devtools)
+install_github("nyubachi/pharmaprepro")
 ```
 
 ## Example
