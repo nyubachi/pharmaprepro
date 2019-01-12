@@ -1,3 +1,14 @@
+#' Calculate creatinine clearance
+#'
+#' @param age Age of the subject
+#' @param weight Unit is kilogram
+#' @param scr Serum creatinine value. Unit is mg/dL.
+#' @param gender female or male
+#' @param correction When the value is 1, if scr is less than 0.6, scr is rounded up to 0.6. If the value is 0, it will not be rounded up. The default value is
+#'
+#' @export
+#'
+
 ccrcalc <- function(age, weight, scr, gender, correction = 1) {
   # 性別の論理型ベクトルを作成
   female <- gender == "female"
