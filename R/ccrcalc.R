@@ -31,5 +31,5 @@ ccrcalc <- function(age, weight, scr, gender, correction = 1) {
   ccr[female] <- 0.85 * ccr_base[female]
   ccr[male] <- ccr_base[male]
 
-  return(ccr)
+  return(round(ccr, digits = 2))
 }
