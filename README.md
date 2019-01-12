@@ -27,7 +27,7 @@ library(pharmaprepro)
 ``` r
 # test data
 x <- data.frame(age = c(109, 98, 47, 25),
-                height = c(161.6, 182.5, 170.1, 155.4),
+                height = c(161.5, 182.5, 170.1, 155.4),
                 weight = c(55.2, 70.2, 60.5, 54.8),
                 scr = c(0.8, 1.2, 0.4, 0.5),
                 gender = c("female", "male", "male", "female"),
@@ -38,7 +38,7 @@ x <- data.frame(age = c(109, 98, 47, 25),
 
 ``` r
 bmicalc(x$height, x$weight)
-#> [1] 21.14 21.08 20.91 22.69
+#> [1] 21.16 21.08 20.91 22.69
 ```
 
 ### ccrcalc
@@ -47,21 +47,21 @@ If scr is less than 0.6, it rounds up to 0.6.
 
 ``` r
 ccrcalc(x$age, x$weight, x$scr, x$gender, 1)
-#> [1]  25.25208  34.12500 130.24306 123.99769
+#> [1]  25.25  34.13 130.24 124.00
 ```
 
 No scr correction.
 
 ``` r
 ccrcalc(x$age, x$weight, x$scr, x$gender, 0)
-#> [1]  25.25208  34.12500 195.36458 148.79722
+#> [1]  25.25  34.13 195.36 148.80
 ```
 
 ### stdwtcalc
 
 ``` r
 stdwtcalc(x$height)
-#> [1] 57.45 73.27 63.65 53.13
+#> [1] 57.38 73.27 63.65 53.13
 ```
 
 ### wareki2seireki
