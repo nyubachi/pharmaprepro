@@ -38,10 +38,10 @@ x <- data.frame(age = c(109, 98, 72, 25),
 ### agecalc
 
 ``` r
-# Convert birthday from Japanese calendar to Christian calendar year
+# Convert birthday from Japanese calendar to Christian calendar year.
 birthday <- wareki2seireki(x$birthday)
 
-# Calculate age from birthday and target date
+# Calculate age from birthday and target date.
 agecalc(x$target_day, birthday)
 #> [1] 79 88 71 20
 ```
