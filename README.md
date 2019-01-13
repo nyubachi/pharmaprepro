@@ -3,7 +3,7 @@
 
 # pharmaprepro
 
-This package is for medical staff such as pharmacists to use for
+This R package is for medical staff such as pharmacists to use for
 preprocessing clinical data.
 
 ## Installation
