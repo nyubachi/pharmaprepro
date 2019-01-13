@@ -1,7 +1,7 @@
 Package: pharmaprepro
 Type: Package
 Title: Pre-processing of clinical data
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: person("nyubachi", role = c("aut", "cre"), email = "nyubachi248@gmail.com")
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
