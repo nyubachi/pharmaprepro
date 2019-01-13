@@ -10,11 +10,11 @@
 #' @export
 #'
 agecalc <- function(target_day, birthday) {
-  target_day <- lubridate::ymd(target_day)
-  birthday <- lubridate::ymd(birthday)
+  target_day <- ymd(target_day)
+  birthday <- ymd(birthday)
 
-  time_interval <- lubridate::interval(birthday, target_day)
-  pre_age <- time_interval / lubridate::years(1)
+  time_interval <- interval(birthday, target_day)
+  pre_age <- time_interval / years(1)
   age <- trunc(pre_age)
 
   return(age)
