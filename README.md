@@ -3,7 +3,7 @@
 
 # pharmaprepro
 
-This package is for medical staff such as pharmacists to use for
+This R package is for medical staff such as pharmacists to use for
 preprocessing clinical data.
 
 ## Installation
@@ -37,7 +37,7 @@ x <- data.frame(age = c(109, 98, 72, 25),
 
 ### agecalc
 
-Calculate the age on a specific date.
+Calculate the age on the specific date.
 
 ``` r
 # Convert birthday from Japanese calendar to Christian calendar year.
