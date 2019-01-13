@@ -40,7 +40,18 @@ x <- data.frame(age = c(109, 98, 72, 25),
                 weight = c(55.2, 70.2, 60.5, 54.8),
                 scr = c(0.4, 0.9, 1.1, 0.5),
                 gender = c("female", "male", "male", "female"),
-                birthday = c("M43.09.12", "T10.11.05", "S22.03.31", "H06.12.29"))
+                birthday = c("M43.09.12", "T10.11.05", "S22.03.31", "H06.12.29"),
+                target_day = c("1990/06/10", "2010/04/22", "2018/12/03", "2015/10/03"))
+```
+
+## agecalc
+
+```{r}
+# Convert birthday from Japanese calendar to Christian calendar year
+birthday <- wareki2seireki(x$birthday)
+
+# Calculate age from birthday and target date
+agecalc(x$target_day, birthday)
 ```
 
 ### bmicalc
