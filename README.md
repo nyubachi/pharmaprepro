@@ -35,7 +35,7 @@ x <- data.frame(age = c(109, 98, 72, 25),
                 target_day = c("1990/06/10", "2010/04/22", "2018/12/03", "2015/10/03"))
 ```
 
-## agecalc
+### agecalc
 
 ``` r
 # Convert birthday from Japanese calendar to Christian calendar year
