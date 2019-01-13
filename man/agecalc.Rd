@@ -4,12 +4,12 @@
 \alias{agecalc}
 \title{Calculate the age of the target day}
 \usage{
-agecalc(target_day, birthday)
+agecalc(birthday, target_day = today())
 }
 \arguments{
-\item{target_day}{Date for calculating age}
-
 \item{birthday}{For example "1965/09/13" or "1965.09.13" or "1965-09-13"}
+
+\item{target_day}{Date for calculating age. If you omit the argument, today is entered.}
 }
 \description{
 Calculate the age of the target day

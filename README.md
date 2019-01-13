@@ -42,10 +42,18 @@ Calculate the age on a specific date.
 ``` r
 # Convert birthday from Japanese calendar to Christian calendar year.
 birthday <- wareki2seireki(x$birthday)
+```
 
+``` r
 # Calculate age from birthday and target date.
-agecalc(x$target_day, birthday)
+agecalc(birthday, x$target_day)
 #> [1] 79 88 71 20
+```
+
+``` r
+# If the second argument is omitted, today is entered.
+agecalc(birthday)
+#> [1] 108  97  71  24
 ```
 
 ### bmicalc
