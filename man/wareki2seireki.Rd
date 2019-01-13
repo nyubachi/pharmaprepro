@@ -7,8 +7,8 @@
 wareki2seireki(wareki)
 }
 \arguments{
-\item{wareki}{The value of Japanese calendar. For example, please input like "S47.03.31".}
+\item{wareki}{The value of Japanese calendar. For example, please input like "S07.03.31" or "S07/03/31" or "S07-03-31".}
 }
 \description{
-This function converts the Japanese calendar to the Christian era. It corresponds to Meiji, Taisho, Showa, Heisei. For example, converts "S47.03.31" to "1972/03/31".
+This function converts the Japanese calendar to the Christian era. It corresponds to Meiji, Taisho, Showa, Heisei. For example, converts "S47.03.31" to "1972-03-31".
 }
