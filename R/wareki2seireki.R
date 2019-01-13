@@ -20,7 +20,6 @@ wareki2seireki <- function(wareki) {
 
   # 西暦用の空ベクトルを作る
   seireki_year <- rep(0, length(wareki))
-  seireki <- rep(0, length(wareki))
 
   # 論理型ベクトルを作成
   meiji <- nengo == "M"
