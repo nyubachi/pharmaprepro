@@ -2,6 +2,7 @@
 
 export(agecalc)
 export(bmicalc)
+export(bsacalc)
 export(ccrcalc)
 export(stdwtcalc)
 export(wareki2seireki)

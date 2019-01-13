@@ -9,7 +9,7 @@ agecalc(target_day, birthday)
 \arguments{
 \item{target_day}{Date for calculating age}
 
-\item{birthday}{For example "1965/09/13"}
+\item{birthday}{For example "1965/09/13" or "1965.09.13" or "1965-09-13"}
 }
 \description{
 Calculate the age of the target day

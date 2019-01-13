@@ -57,6 +57,28 @@ bmicalc(x$height, x$weight)
 #> [1] 21.16 21.08 20.91 22.69
 ```
 
+### bsacalc
+
+Calculate the body surface area from height and weight data.
+
+``` r
+# If the third argument is 1 (default), using the DuBois formula.
+bsacalc(x$height, x$weight, 1)
+#> [1] 1.58 1.91 1.70 1.53
+```
+
+``` r
+# If the third argument is 2, using the Shintani formula.
+bsacalc(x$height, x$weight, 2)
+#> [1] 1.61 1.95 1.74 1.57
+```
+
+``` r
+# If the third argument is 3, using the Fujimoto formula.
+bsacalc(x$height, x$weight, 3)
+#> [1] 1.53 1.85 1.65 1.49
+```
+
 ### ccrcalc
 
 Calculate creatinine
