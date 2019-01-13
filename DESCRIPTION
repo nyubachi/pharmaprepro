@@ -1,6 +1,6 @@
 Package: pharmaprepro
 Type: Package
-Title: Pre-processing of clinical data
+Title: preprocessing of clinical data
 Version: 0.3.0
 Authors@R: person("nyubachi", role = c("aut", "cre"), email = "nyubachi248@gmail.com")
 Description: More about what it does (maybe more than one line)
