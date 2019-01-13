@@ -37,6 +37,8 @@ x <- data.frame(age = c(109, 98, 72, 25),
 
 ### agecalc
 
+Calculate the age on a specific date.
+
 ``` r
 # Convert birthday from Japanese calendar to Christian calendar year.
 birthday <- wareki2seireki(x$birthday)
@@ -48,6 +50,8 @@ agecalc(x$target_day, birthday)
 
 ### bmicalc
 
+Calculate the body mass index from height and weight data.
+
 ``` r
 bmicalc(x$height, x$weight)
 #> [1] 21.16 21.08 20.91 22.69
@@ -55,21 +59,24 @@ bmicalc(x$height, x$weight)
 
 ### ccrcalc
 
-If scr is less than 0.6, it rounds up to 0.6.
+Calculate creatinine
+clearance.
 
 ``` r
+# When the fifth argument is 1 (default), if scr is less than 0.6, it rounds up to 0.6.
 ccrcalc(x$age, x$weight, x$scr, x$gender, 1)
 #> [1]  33.67  45.50  51.94 124.00
 ```
 
-No scr correction.
-
 ``` r
+# If the fifth argument is 0, scr is not corrected.
 ccrcalc(x$age, x$weight, x$scr, x$gender, 0)
 #> [1]  50.50  45.50  51.94 148.80
 ```
 
 ### stdwtcalc
+
+Calculate standard weight from height data.
 
 ``` r
 stdwtcalc(x$height)
@@ -77,6 +84,8 @@ stdwtcalc(x$height)
 ```
 
 ### wareki2seireki
+
+Convert Japanese calendar to Christian calendar.
 
 ``` r
 wareki2seireki(x$birthday)
