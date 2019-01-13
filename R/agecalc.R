@@ -1,7 +1,7 @@
 #' Calculate the age of the target day
 #'
 #' @param target_day Date for calculating age
-#' @param birthday For example "1965/09/13"
+#' @param birthday For example "1965/09/13" or "1965.09.13" or "1965-09-13"
 #'
 #' @importFrom lubridate ymd
 #' @importFrom lubridate interval
